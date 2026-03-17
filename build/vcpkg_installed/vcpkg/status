@@ -1,0 +1,41 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 409ec064cb00eacdf1530ca8d02663673f1401c1bcb444de4874ed266a4e9208
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 650cb596df933f3fdfcb29be3709272706b0d5168e1fd45cf7507507dfa0a9bf
+Description: A compression library
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7ef1ceb6cfb54d66d69d479173af4cbdc0c3ffc5c507b817c112c2a85fa7125d
+Status: install ok installed
+
+Package: libjpeg-turbo
+Version: 3.1.3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 02b3bed2fd9d4e5c7a6d36af6cdb6df65d881ba2d42b48211feda5c6a1900d3d
+Description: libjpeg-turbo is a JPEG image codec that uses SIMD instructions (MMX, SSE2, NEON, AltiVec) to accelerate baseline JPEG compression and decompression on x86, x86-64, ARM, and PowerPC systems.
+Status: install ok installed
+
+Package: qpdf
+Version: 12.3.2
+Depends: libjpeg-turbo, vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 069cc226ce8b08beffcc3723fb40c2226d48ae7239c7937ff0c74732fd0e4546
+Description: A content-preserving PDF document transformer
+Status: install ok installed
+

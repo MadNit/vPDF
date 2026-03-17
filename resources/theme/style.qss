@@ -1,0 +1,172 @@
+# SidebarMenu and Base Styles
+
+/* Main App Background */
+QMainWindow {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1E1E1E, stop:1 #121212);
+    color: #E0E0E0;
+}
+
+/* Glassmorphism Menu Bar */
+QMenuBar {
+    /* Vibrant modern purple gradient */
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #8D1111, stop:1 #D12A2A);
+    color: #F0F0F0;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 20);
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin: 2px 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(255, 255, 255, 28);
+    color: #FFFFFF;
+}
+
+QMenuBar::item:pressed {
+    background-color: rgba(255, 255, 255, 40);
+}
+
+/* Dropdown Menus */
+QMenu {
+    background-color: rgba(30, 32, 38, 245);
+    border: 1px solid rgba(255, 255, 255, 30);
+    border-radius: 8px;
+    padding: 6px 4px;
+}
+
+QMenu::item {
+    padding: 6px 24px 6px 32px;
+    background: transparent;
+    border-radius: 4px;
+    margin: 2px 4px;
+    color: #E0E0E0;
+}
+
+QMenu::item:selected {
+    background-color: rgba(77, 161, 255, 40); /* Highlight color with transparency */
+    color: #FFFFFF;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 15);
+    margin: 4px 12px;
+}
+
+/* Sidebar Tool Bar */
+QToolBar {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #8D1111, stop:1 #D12A2A);
+    border-right: 1px solid rgba(255, 255, 255, 15);
+    border-bottom: 1px solid rgba(255, 255, 255, 15);
+    padding: 4px 6px;
+    spacing: 8px;
+}
+
+QToolButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 4px 6px;
+}
+
+QToolButton:hover {
+    background-color: #2D2D2D;
+}
+
+QToolButton:checked, QToolButton:pressed {
+    background-color: #5A1A1A;
+    color: #FFFFFF;
+}
+
+/* Scrollable panels / Docks */
+QDockWidget {
+    titlebar-close-icon: url(close.png);
+    titlebar-normal-icon: url(float.png);
+    color: #E0E0E0;
+    font-weight: 600;
+}
+
+QDockWidget::title {
+    background: #181818;
+    text-align: left;
+    padding: 6px 12px;
+}
+
+/* List / ThumbnailPanel */
+QListWidget, QListView {
+    background-color: #161616;
+    border: none;
+    outline: none;
+}
+
+QListWidget::item {
+    border-radius: 4px;
+    margin: 4px 8px;
+}
+
+QListWidget::item:hover {
+    background-color: #252525;
+}
+
+QListWidget::item:selected {
+    background-color: #303030;
+    border: 1px solid #4DA1FF;
+}
+
+/* Main Splitter */
+QSplitter::handle {
+    background-color: #2C2C2C;
+}
+
+QSplitter::handle:hover {
+    background-color: #4DA1FF;
+}
+
+QSplitter::handle:horizontal {
+    width: 2px;
+}
+
+/* General Viewport */
+QScrollArea {
+    background-color: #1A1A1A;
+    border: none;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #181818;
+    width: 10px;
+    margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #404040;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #505050;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+
+/* Red Status Bar */
+QStatusBar {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #8D1111, stop:1 #D12A2A);
+    color: #F7F7F7;
+    border-top: 1px solid rgba(255,255,255,0.25);
+}
+
+
+

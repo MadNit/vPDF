@@ -1,0 +1,18 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>theme/style.qss</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file alias="pages.svg">../src/ui/icons/pages.svg</file>
+        <file alias="tools.svg">../src/ui/icons/tools.svg</file>
+        <file alias="settings.svg">../src/ui/icons/settings.svg</file>
+        <file alias="fit.svg">../src/ui/icons/fit.svg</file>
+        <file alias="rotate_left.svg">../src/ui/icons/rotate_left.svg</file>
+        <file alias="rotate_right.svg">../src/ui/icons/rotate_right.svg</file>
+        <file alias="prev_page.svg">../src/ui/icons/prev_page.svg</file>
+        <file alias="next_page.svg">../src/ui/icons/next_page.svg</file>
+        <file alias="single_page.svg">../src/ui/icons/single_page.svg</file>
+        <file alias="two_page.svg">../src/ui/icons/two_page.svg</file>
+    </qresource>
+</RCC>
