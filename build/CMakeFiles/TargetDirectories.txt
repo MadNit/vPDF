@@ -1,4 +1,0 @@
-C:/projects/meic/pdfkill/build/CMakeFiles/pdfkill.dir
-C:/projects/meic/pdfkill/build/CMakeFiles/INSTALL.dir
-C:/projects/meic/pdfkill/build/CMakeFiles/ALL_BUILD.dir
-C:/projects/meic/pdfkill/build/CMakeFiles/ZERO_CHECK.dir
